@@ -76,7 +76,7 @@ setInterval(async () => {
       commitMessage += `${idx + 1}. ${i.title}\n`
       commitMessage += `- ${i.url}\n\n`
     })
-r
+
     pre = news
 
     // 파일을 생성하거나 업데이트
@@ -92,7 +92,7 @@ r
   } catch (error) {
     console.error(`An error occurred: ${error.message}`);
   }
-}, 5000); // 10분
+}, 30 * 10 * 60 * 1000); // 10분
 
 app.listen(3003, () => {
   console.log('start')
