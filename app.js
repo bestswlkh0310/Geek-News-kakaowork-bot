@@ -92,7 +92,7 @@ setInterval(async () => {
   } catch (error) {
     console.error(`An error occurred: ${error.message}`);
   }
-}, 30 * 10 * 60 * 1000); // 10분
+}, 60 * 60 * 1000); // 1시간
 
 app.listen(3003, () => {
   console.log('start')
